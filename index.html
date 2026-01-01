@@ -15,9 +15,21 @@
     }
 
     header {
-      padding: 3rem 1.5rem;
+      padding: 3rem 1.5rem 3rem 6.5rem; /* leave space on the left for the logo */
       text-align: center;
       border-bottom: 1px solid #222;
+      position: relative;
+    }
+
+    /* logo in the top-left */
+    .logo {
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      width: 64px;
+      height: auto;
+      border-radius: 6px;
+      display: block;
     }
 
     header h1 {
@@ -36,7 +48,7 @@
       padding: 0 1.5rem;
     }
 
-    img {
+    img.content-image {
       max-width: 100%;
       height: auto;
       display: block;
@@ -65,6 +77,9 @@
 <body>
 
   <header>
+    <a href="/" class="logo-link" aria-label="Modern Idiots home">
+      <img class="logo" src="/media/Modern%20Logo.png" alt="Modern Idiots logo">
+    </a>
     <h1>Modern Idiots</h1>
     <p>A very confident website</p>
   </header>
@@ -75,7 +90,7 @@
       This is Conna. Conna says "CONFIDENCE IS KEY"
     </p>
 
-   <img src="/conna/conna-meme.png" alt="My Hero's image">
+   <img class="content-image" src="/conna/conna-meme.png" alt="My Hero's image">
 
     <p>
      
