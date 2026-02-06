@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            color: #262626;
+        }
+
+        /* Profile Header */
+        .profile {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        /* Photo Grid */
+        .grid {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .grid img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .grid img:hover {
+            transform: scale(1.03);
+            opacity: 0.85;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <div class="profile-info">
+            <h1>username_here</h1>
+            <div class="stats">
+                <span><strong>24</strong> posts</span>
+                <span><strong>1.2k</strong> followers</span>
+                <span><strong>180</strong> following</span>
+            </div>
+            <p>Just vibing 📸✨</p>
+        </div>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="grid">
+        <img src="conna-meme.png" alt="">
+        <img src="blue-dog.png" alt="">
+        <img src="photo3.jpg" alt="">
+        <img src="photo4.jpg" alt="">
+        <img src="photo5.jpg" alt="">
+        <img src="photo6.jpg" alt="">
+        <img src="photo7.jpg" alt="">
+        <img src="photo8.jpg" alt="">
+        <img src="photo9.jpg" alt="">
+    </div>
+
+</body>
+</html>
