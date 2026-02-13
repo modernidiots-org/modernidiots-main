@@ -127,17 +127,49 @@
   }
 }
 
+  .home-btn {
+  position: absolute;
+  left: 1.5rem;
+  top: 5.8rem; /* adjust slightly if needed */
+  padding: 0.45rem 1rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.home-btn:hover {
+  background: #f5f5f5;
+  color: #111;
+  border-color: #f5f5f5;
+}
+.logo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+
   </style>
 </head>
 <body>
 
   <header>
-    <a href="/" aria-label="Modern Idiots home">
-      <img class="logo" src="/media/Modern-logo2.png" alt="Modern Idiots logo">
-    </a>
-    <h1>Modern Idiots</h1>
-    <p>A very confident website</p>
-  </header>
+  <a href="/index.html" class="logo-link" aria-label="Modern Idiots home">
+  <img class="logo" src="/media/Modern-logo2.png" alt="Modern Idiots logo">
+</a>
+
+  <a href="/index.html" class="home-btn">Home</a>
+
+  <h1>Modern Idiots</h1>
+  <p>A very confident website</p>
+</header>
+
 
   <main>
     <article>
