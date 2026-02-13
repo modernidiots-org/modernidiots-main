@@ -74,6 +74,33 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .nav-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #f5f5f5;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+  border-radius: 6px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #f5f5f5;
+  color: #111;
+  border-color: #f5f5f5;
+}
+
   </style>
 </head>
 <body>
@@ -84,6 +111,12 @@
     </a>
     <h1>Modern Idiots</h1>
     <p>A very confident website</p>
+    <div class="nav-buttons">
+  <a href="/publications/confidenceiskey.html" class="nav-btn">Articles</a>
+  <a href="/nuh-uh" class="nav-btn">Nuh-Uh</a>
+  <a href="/conna/pookie.html" class="nav-btn">Conna fanpage</a>
+</div>
+
   </header>
 
   <main>
