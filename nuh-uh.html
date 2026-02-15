@@ -14,6 +14,26 @@
       --accent: #3b82f6;
       --border: #1f2933;
     }
+    .top-home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 18px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.top-home-btn:hover {
+  background: #ffffff;
+  color: #0f172a;
+}
+
 
     * {
       box-sizing: border-box;
@@ -122,6 +142,7 @@
   </style>
 </head>
 <body>
+  <a href="/index.html" class="top-home-btn">Home</a>
   <div class="container">
     <div class="card">
       <header>
