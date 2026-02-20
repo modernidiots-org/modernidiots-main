@@ -3,74 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <title>404 | Modern Idiots</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/media/favicon.svg">
 
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: system-ui, Arial, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1.5rem 3rem 6.5rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      width: 256px;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #aaa;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
       text-align: center;
     }
 
-    .container {
-      max-width: 440px;
-      padding: 24px;
-    }
-
-    img {
+    .panda {
       max-width: 260px;
       width: 100%;
-      margin-bottom: 20px;
+      margin: 2rem auto;
+      display: block;
     }
 
-    h1 {
-      font-size: 2.6rem;
-      margin-bottom: 8px;
+    .nav-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
-    .tagline {
-      font-size: 1.2rem;
-      margin-bottom: 14px;
-      color: #cbd5f5;
-    }
-
-    .joke {
-      font-size: 1rem;
-      margin-bottom: 22px;
-      color: #94a3b8;
-    }
-
-    a {
-      color: #38bdf8;
+    .nav-btn {
+      padding: 0.6rem 1.4rem;
+      border: 1px solid #f5f5f5;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 6px;
+      color: #f5f5f5;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .nav-btn:hover {
+      background: #f5f5f5;
+      color: #111;
+      border-color: #f5f5f5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid #222;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="/media/sad-panda.png" alt="Sad panda">
 
-    <h1>404</h1>
-    <div class="tagline">We are modern idiots.</div>
+  <header>
+    <a href="/" aria-label="Modern Idiots home">
+      <img class="logo" src="/media/Modern-logo2.png" alt="Modern Idiots logo">
+    </a>
+    <h1>Modern Idiots</h1>
+    <p>404 moment</p>
+  </header>
 
-    <div class="joke">
+  <main>
+    <h2>We are modern idiots.</h2>
+
+    <img class="panda" src="/media/sad-panda.png" alt="Sad panda">
+
+    <p>
       This page does not exist.<br>
       Either it never did, or you clicked like a modern idiot.<br>
-      It happens to the best of us.
-    </div>
+      It happens.
+    </p>
 
-    <a href="/">Return to civilization</a>
-  </div>
+    <div class="nav-buttons">
+      <a href="/" class="nav-btn">Go Home</a>
+      <a href="/publications/confidenceiskey.html" class="nav-btn">Articles</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 modernidiots.org<br>
+    You lost the game.
+  </footer>
+
 </body>
 </html>
