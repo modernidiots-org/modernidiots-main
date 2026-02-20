@@ -2,34 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 – Page Not Found</title>
+  <title>404 | Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      margin: 0;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      background-color: #0f172a;
+      color: #e5e7eb;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
     }
+
+    .container {
+      max-width: 420px;
+      padding: 24px;
+    }
+
+    img {
+      max-width: 260px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #cbd5f5;
+    }
+
     a {
       color: #38bdf8;
       text-decoration: none;
+      font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
+    <img src="/media/sad-panda.png" alt="Sad panda">
     <h1>404</h1>
-    <p>That page does not exist.</p>
-    <p><a href="/">Go back home</a></p>
+    <p>Oops. This page wandered off.</p>
+    <a href="/">Go back home</a>
   </div>
 </body>
 </html>
