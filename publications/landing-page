@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Idiots | Articles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/svg+xml" href="/media/favicon.svg">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1.5rem 3rem 6.5rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      width: 256px;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #aaa;
+    }
+
+    .nav-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      padding: 0.6rem 1.4rem;
+      border: 1px solid #f5f5f5;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 6px;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: #f5f5f5;
+      color: #111;
+      border-color: #f5f5f5;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .articles {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .article-card {
+  border: 1px solid #222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #181818;
+  transition: all 0.2s ease;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.article-card:hover {
+  border-color: #4da3ff;
+  transform: translateY(-4px);
+}
+
+.article-content {
+  flex: 1;
+}
+
+.article-image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #222;
+}
+
+/* Mobile fix */
+@media (max-width: 700px) {
+  .article-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+    .read-more {
+      display: inline-block;
+      margin-top: 0.8rem;
+      color: #4da3ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid #222;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .header-image {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/" aria-label="Modern Idiots home">
+      <img class="logo" src="/media/Modern-logo2.png" alt="Modern Idiots logo">
+      <img class="header-image" src="/media/conna-side.png" alt="Conna being confident">
+    </a>
+
+    <h1>Publications</h1>
+    <p>News may be fake, but confidence is always key</p>
+
+    <div class="nav-buttons">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="/nuh-uh" class="nav-btn">Nuh-Uh</a>
+      <a href="/conna/pookie.html" class="nav-btn">Conna Fanpage</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="articles">
+
+      <div class="article-card">
+
+  <div class="article-content">
+    <h2>Confidence is Key</h2>
+    <p>How Conna Became a Case Study in Certainty</p>
+    <a href="/publications/articles/confidenceiskey.html" class="read-more">Read Article →</a>
+  </div>
+
+  <img 
+    src="/conna/media/conna-meme.png" 
+    alt="Article thumbnail"
+    class="article-image"
+  >
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 modernidiots.org<br>
+    If you see this, you lost the game.
+  </footer>
+
+</body>
+</html>
