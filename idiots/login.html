@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Protected Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+<div id="login">
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <button onclick="login()">Login</button>
+  <button onclick="signup()">Sign Up</button>
+  <p id="message"></p>
+</div>
+
+<div id="content" style="display:none;">
+  <h1>Restricted Content</h1>
+  <p>Welcome! You are logged in.</p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+  const supabase = window.supabase.createClient(
+    "https://qiyocycgbpjaounybygn.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpeW9jeWNnYnBqYW91bnlieWduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5NjM2MzgsImV4cCI6MjA4NzUzOTYzOH0.VMLoC_JcZq-p__pJQDS00Lt-UPCmL95Lz2Y5OR0pZPg"
+  );
+
+  async function signup() {
+    const { error } = await supabase.auth.signUp({
+      email: email.value,
+      password: password.value
+    });
+    document.getElementById("message").textContent =
+      error ? error.message : "Signup successful!";
+  }
+
+  async function login() {
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.value,
+      password: password.value
+    });
+    document.getElementById("message").textContent =
+      error ? error.message : "Login successful!";
+    checkUser();
+  }
+
+  async function logout() {
+    await supabase.auth.signOut();
+    location.reload();
+  }
+
+  async function checkUser() {
+    const { data } = await supabase.auth.getUser();
+    if (data.user) {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
+  }
+
+  checkUser();
+</script>
+
+</body>
+</html>
