@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern Idiots</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/svg+xml" href="/media/favicon.svg">
+
+<style>
+
+:root{
+  --bg:#111;
+  --card:#181818;
+  --text:#f5f5f5;
+  --muted:#aaa;
+  --accent:#4da3ff;
+  --border:#222;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+  border-bottom:1px solid var(--border);
+  padding:2.5rem 1.5rem;
+  text-align:center;
+}
+
+.logo{
+  width:110px;
+  margin-bottom:1rem;
+}
+
+header h1{
+  margin:0;
+  font-size:2.6rem;
+}
+
+header p{
+  margin-top:.5rem;
+  color:var(--muted);
+}
+
+/* NAV */
+
+.nav-buttons{
+  margin-top:1.5rem;
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.nav-btn{
+  padding:.6rem 1.4rem;
+  border:1px solid var(--border);
+  border-radius:6px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  font-size:.9rem;
+  color:var(--text);
+  text-decoration:none;
+  transition:.2s;
+}
+
+.nav-btn:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  max-width:800px;
+  margin:4rem auto 2rem auto;
+  padding:0 1.5rem;
+}
+
+.hero h2{
+  font-size:2rem;
+  margin-bottom:.5rem;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:1.1rem;
+}
+
+/* HERO IMAGE */
+
+.hero img{
+  max-width:100%;
+  border-radius:8px;
+  margin-top:2rem;
+  border:1px solid var(--border);
+}
+
+/* FEATURES */
+
+.features{
+  max-width:1000px;
+  margin:4rem auto;
+  padding:0 1.5rem;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.5rem;
+}
+
+.feature-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:1.8rem;
+  transition:.2s;
+}
+
+.feature-card:hover{
+  border-color:var(--accent);
+  transform:translateY(-4px);
+}
+
+.feature-card h3{
+  margin-top:0;
+}
+
+.feature-card p{
+  color:var(--muted);
+}
+
+.feature-link{
+  display:inline-block;
+  margin-top:.8rem;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.feature-link:hover{
+  text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:2rem 1.5rem;
+  border-top:1px solid var(--border);
+  color:#777;
+  font-size:.9rem;
+}
+
+/* MOBILE */
+
+@media (max-width:700px){
+
+header h1{
+  font-size:2rem;
+}
+
+.hero h2{
+  font-size:1.6rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img class="logo" src="/media/Modern-logo2.png" alt="Modern Idiots logo">
+
+<h1>Modern Idiots</h1>
+<p>A very confident website</p>
+
+<div class="nav-buttons">
+<a href="/publications/index.html" class="nav-btn">Articles</a>
+<a href="/idiots/nuh-uh.html" class="nav-btn">Nuh-Uh</a>
+<a href="/fanpages/index.html" class="nav-btn">Fanpages</a>
+</div>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h2>Confidence is Key</h2>
+
+<p>
+Welcome to Modern Idiots — a place for highly confident statements,
+questionable journalism, and fanpages dedicated to legends.
+</p>
+
+<img src="/conna/media/conna-meme.png" alt="Conna meme">
+
+</section>
+
+<!-- FEATURE CARDS -->
+
+<section class="features">
+
+<div class="feature-card">
+<h3>Articles</h3>
+<p>
+Read the latest extremely reliable journalism and groundbreaking research.
+</p>
+<a href="/publications/index.html" class="feature-link">View Articles →</a>
+</div>
+
+<div class="feature-card">
+<h3>Fanpages</h3>
+<p>
+Pages dedicated to the legends who shaped modern confidence.
+</p>
+<a href="/fanpages/index.html" class="feature-link">View Fanpages →</a>
+</div>
+
+<div class="feature-card">
+<h3>Idiots Tools</h3>
+<p>
+Essential utilities including the world-famous Nuh-Uh button.
+</p>
+<a href="/idiots/nuh-uh.html" class="feature-link">Use Tools →</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 modernidiots.org<br>
+If you see this, you lost the game and Conna says 6-7
+</footer>
+
+</body>
+</html>
